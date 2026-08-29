@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 2 Mastery - Mission 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Paper 2 Mastery</h1>
+      <p>Mission 6 – String Handling</p>
+    </div>
+    <div class="teacher"><strong>James Arokia Jenifer</strong><br>Computer Science Teacher</div>
+  </header>
+
+  <main>
+    <section id="login" class="card">
+      <h2>Student Check-In</h2>
+      <label>Student full name</label>
+      <input id="studentName" placeholder="Enter full name" autocomplete="off">
+      <label>Class</label>
+      <select id="studentClass">
+        <option value="">Select class</option>
+        <option>Sec 3B1</option>
+        <option>Sec 3C1</option>
+      </select>
+      <label>Student ID / Register number</label>
+      <input id="studentId" placeholder="Optional" autocomplete="off">
+      <button id="startLogin" class="primary">Start</button>
+    </section>
+
+    <section id="dashboard" class="card hidden">
+      <h2 id="welcome"></h2>
+      <p id="studentDetails"></p>
+      <div class="mission-card">
+        <span class="pill">Mission 6</span>
+        <h3>String Handling</h3>
+        <p>LENGTH • LCASE • UCASE • SUBSTRING</p>
+        <p>I Do → We Do → You Do</p>
+        <p>Status: <strong id="status">Not started</strong></p>
+        <button id="startMission" class="success">Start Mission 6</button>
+      </div>
+    </section>
+
+    <section id="lesson" class="card hidden">
+      <div class="track"><div id="bar"></div></div>
+      <div class="meta"><span id="sectionLabel" class="pill"></span><span id="counter"></span></div>
+      <h2 id="title"></h2>
+      <div id="content"></div>
+      <div id="answer"></div>
+      <div id="feedback"></div>
+      <div class="buttons">
+        <button id="hint" class="secondary hidden">Hint</button>
+        <button id="check" class="primary hidden">Check Answer</button>
+        <button id="next" class="success hidden">Next</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2 id="resultTitle"></h2>
+      <p id="resultScore" class="big"></p>
+      <p id="resultMessage"></p>
+      <div class="buttons">
+        <button id="retry" class="primary hidden">Retry Mission 6</button>
+        <button id="back" class="secondary">Dashboard</button>
+        <button id="continueBtn" class="success hidden">Continue</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Paper 2 Mastery • James Arokia Jenifer – Computer Science Teacher</footer>
+
+  <script src="mission6.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
